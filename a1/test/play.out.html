@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Output: tests/play.tst</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="gogui-regress 1.5.0 (http://gogui.sf.net)">
+<style type="text/css">
+<!--
+body { margin:0; }
+span.comment { color:#999999; }
+span.fail { font-weight:bold; color:#ff5454; }
+span.error { font-weight:bold; color:#ffa954; }
+span.stderr { color:#666666; }
+span.invalid { background:#ff5454;}
+span.pass { font-weight:bold; color:#5eaf5e; }
+span.test { font-weight:bold; }
+-->
+</style>
+</head>
+<body bgcolor="white" text="black" link="#0000ee" vlink="#551a8b">
+<table border="0" width="100%" bgcolor="#91aee8" border="0">
+<tr><td>
+<h1>Output: tests/play.tst</h1>
+</td></tr>
+</table>
+<table width="100%" bgcolor="#e0e0e0">
+<tr><th align="left">Date:</th><td>January 26, 2019 2:53:26 PM MST</td></tr>
+<tr><th align="left">Host:</th><td>uc03 (Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz)</td></tr>
+<tr><th align="left" valign="top">Command:</th>
+<td valign="top"><tt>Go0.py</tt></td></tr>
+</table>
+<pre style="margin:1em">
+name
+= Go0
+
+version
+= 1.0
+
+cputime
+? Unknown command
+
+</pre>
+<hr style="margin:1em" size="1">
+<pre style="margin:1em">
+<span class="comment"># tests play command for the rules of Gomoku
+# if these tests fail you probably didn't implement play_cmd correctly
+</span><span class="command">boardsize 3
+</span>= 
+
+<span class="command">clear_board
+</span>= 
+
+
+<span class="comment"># correct color
+</span><span class="test"><a name="1">1 play d c3
+</a>#?[illegal move: "d" wrong color]
+= illegal move: "d" wrong color
+
+</span>
+<span class="comment"># correct coordinates
+# beyond columns
+</span><span class="test"><a name="2">2 play b d4
+</a>#?[illegal move: "d4" wrong coordinate]
+= illegal move: "d4" wrong coordinate
+
+</span><span class="comment"># minimum row
+</span><span class="test"><a name="3">3 play b a0
+</a>#?[illegal move: "a0" wrong coordinate]
+= illegal move: "a0" wrong coordinate
+
+</span><span class="comment"># maximum row
+</span><span class="test"><a name="4">4 play b a4
+</a>#?[illegal move: "a4" wrong coordinate]
+= illegal move: "a4" wrong coordinate
+
+</span><span class="comment"># Can't play occupied
+</span><span class="command">play w b1
+</span>= 
+
+<span class="test"><a name="5">5 play b b1
+</a>#?[illegal move: "b1" occupied]
+= illegal move: "b1" occupied
+
+</span>
+<span class="command">clear_board
+</span>= 
+
+<span class="comment"># can play in eyes
+</span><span class="command">play b b1
+</span>= 
+
+<span class="command">play b b2
+</span>= 
+
+<span class="command">play b a2
+</span>= 
+
+<span class="test"><a name="6">6 play b a1
+</a>#?[]
+= 
+
+</span>
+<span class="command">clear_board
+</span>= 
+
+<span class="comment"># allow suicide
+</span><span class="command">play b b1
+</span>= 
+
+<span class="command">play b b2
+</span>= 
+
+<span class="command">play b a2
+</span>= 
+
+<span class="test"><a name="7">7 play w a1
+</a>#?[]
+= 
+
+</span>
+<span class="command">clear_board
+</span>= 
+
+<span class="comment"># no captures
+</span><span class="command">play w a1
+</span>= 
+
+<span class="command">play b b1
+</span>= 
+
+<span class="command">play b b2
+</span>= 
+
+<span class="command">play b a2
+</span>= 
+
+<span class="test"><a name="8">8 play w a1
+</a>#?[illegal move: "a1" occupied]
+= illegal move: "a1" occupied
+
+</span>
+
+</pre>
+<hr style="margin:1em" size="1">
+<pre style="margin:1em">
+cputime
+? Unknown command
+
+quit
+= 
+
+</pre>
+<hr style="margin-bottom:0" size="1">
+<p style="margin-top:1; margin-right:5" align="right"><i><small>Generated on 1/26/19 2:53 PM by gogui-regress 1.5.0 (<a href="http://gogui.sf.net">http://gogui.sf.net</a>)</small></i></p>
+</body>
+</html>

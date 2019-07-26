@@ -1,0 +1,16 @@
+Script started on Sun 17 Mar 2019 05:58:07 PM MDT
+whan@uc03:~/cmput496>cp assignment3.tgz a3
+whan@uc03:~/cmput496>cd a3
+whan@uc03:~/cmput496/a3>tar -xzvf assignment3.tgz
+assignment3/
+assignment3/Gomoku3.py
+assignment3/assignment3-public-tests.gtp
+assignment3/simple_board.py
+assignment3/gtp_connection.py
+assignment3/board_util.py
+whan@uc03:~/cmput496/a3>cd assignment3
+whan@uc03:~/cmput496/a3/assignment3>gogui-regress Gomoku3.y[Kpy assignment3-public- tests.gtp
+whan@uc03:~/cmput496/a3/assignment3>exit
+exit
+
+Script done on Sun 17 Mar 2019 06:01:21 PM MDT

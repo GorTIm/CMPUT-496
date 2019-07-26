@@ -1,0 +1,19 @@
+Script started on Sat 26 Jan 2019 03:13:07 PM MST
+whan@uc03:~/cmput496>exitscript -a presubmission.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgogui-regress Go0.py assignment1-public-tests.gtp [1P-output test/ Go0.py @tests/all.tst[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./Go0.py[Kgogui-regress -output test/ Go0.py @tests/all.tsttests/gen_move.tst[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P./Go0.py assignment1-public-tests.gtp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K ./Go0.py assignment1-public-tests.gtp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-output test/ Go0.py tests/gen_move.tst[4P@tests/all.tst[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./Go0.py[Kgogui-regress -output test/ Go0.py @tests/all.tstGo0.py assignment1-public-tests.gtp [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pscript -a presubmission.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K[Kcp assignment1.tgz test
+whan@uc03:~/cmput496>cd tst[K[Kest
+whan@uc03:~/cmput496/test> tar xvzf file.tar.gz[K[K[K[K[K[K[K[K[K[K[Kassignment1.tgz
+assignment1/
+assignment1/gtp_connection.py
+assignment1/board_util.py
+assignment1/test_board_util.py
+assignment1/test_simple_board.py
+assignment1/simple_board.py
+assignment1/assignment1-public-tests.gtp
+assignment1/Go0.py
+whan@uc03:~/cmput496/test>cd assignment1
+whan@uc03:~/cmput496/test/assignment1>cd assignment1 tar xvzf assignment1.tgzcd test[K[16@p assignment1.tgz[C[C[C[C[Cexit[Kscript -a presubmission.loggogui-regress Go0.py assignment1-public-tessts.gtp 
+20 unexpected FAIL: Correct '', got '[]'
+whan@uc03:~/cmput496/test/assignment1>exit
+exit
+
+Script done on Sat 26 Jan 2019 03:14:50 PM MST

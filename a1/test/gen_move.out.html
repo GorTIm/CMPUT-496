@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>Output: tests/gen_move.tst</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="gogui-regress 1.5.0 (http://gogui.sf.net)">
+<style type="text/css">
+<!--
+body { margin:0; }
+span.comment { color:#999999; }
+span.fail { font-weight:bold; color:#ff5454; }
+span.error { font-weight:bold; color:#ffa954; }
+span.stderr { color:#666666; }
+span.invalid { background:#ff5454;}
+span.pass { font-weight:bold; color:#5eaf5e; }
+span.test { font-weight:bold; }
+-->
+</style>
+</head>
+<body bgcolor="white" text="black" link="#0000ee" vlink="#551a8b">
+<table border="0" width="100%" bgcolor="#91aee8" border="0">
+<tr><td>
+<h1>Output: tests/gen_move.tst</h1>
+</td></tr>
+</table>
+<table width="100%" bgcolor="#e0e0e0">
+<tr><th align="left">Date:</th><td>January 26, 2019 2:53:26 PM MST</td></tr>
+<tr><th align="left">Host:</th><td>uc03 (Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz)</td></tr>
+<tr><th align="left" valign="top">Command:</th>
+<td valign="top"><tt>Go0.py</tt></td></tr>
+</table>
+<pre style="margin:1em">
+name
+= Go0
+
+version
+= 1.0
+
+cputime
+? Unknown command
+
+</pre>
+<hr style="margin:1em" size="1">
+<pre style="margin:1em">
+<span class="comment"># tests that gen_move uses Gomoku rules instead of Go rules
+</span><span class="command">boardsize 3
+</span>= 
+
+<span class="test"><a name="1">1 genmove b
+</a>#?[[a-z][0-9]]
+= b1
+
+<a name="2">2 genmove w
+</a>#?[[a-z][0-9]]
+= b3
+
+<a name="3">3 genmove b
+</a>#?[[a-z][0-9]]
+= c1
+
+<a name="4">4 genmove w
+</a>#?[[a-z][0-9]]
+= c2
+
+<a name="5">5 genmove b
+</a>#?[[a-z][0-9]]
+= b2
+
+<a name="6">6 genmove w
+</a>#?[[a-z][0-9]]
+= a1
+
+<a name="7">7 genmove b
+</a>#?[[a-z][0-9]]
+= c3
+
+<a name="8">8 genmove w
+</a>#?[[a-z][0-9]]
+= a3
+
+<a name="9">9 genmove b
+</a>#?[[a-z][0-9]]
+= a2
+
+</span><span class="comment"># board is full
+</span><span class="test"><a name="10">10 genmove w
+</a>#?[pass]
+= pass
+
+</span>
+<span class="command">boardsize 5
+</span>= 
+
+<span class="command">clear_board
+</span>= 
+
+
+<span class="command">play b a1
+</span>= 
+
+<span class="command">play b a2
+</span>= 
+
+<span class="command">play b a3
+</span>= 
+
+<span class="command">play b a4
+</span>= 
+
+<span class="command">play b a5
+</span>= 
+
+<span class="comment"># somebody has won
+</span><span class="test"><a name="11">11 genmove w
+</a>#?[resign]
+= resign
+
+</span></pre>
+<hr style="margin:1em" size="1">
+<pre style="margin:1em">
+</span>cputime
+? Unknown command
+
+quit
+= 
+
+</pre>
+<hr style="margin-bottom:0" size="1">
+<p style="margin-top:1; margin-right:5" align="right"><i><small>Generated on 1/26/19 2:53 PM by gogui-regress 1.5.0 (<a href="http://gogui.sf.net">http://gogui.sf.net</a>)</small></i></p>
+</body>
+</html>
